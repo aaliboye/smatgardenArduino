@@ -84,6 +84,8 @@ void loop() {
         int indcmd = cmd.indexOf(",", indport+1);
         String cmdout = cmd.substring(indport+1, indcmd);
 
+        Serial.print(cmdout);
+
         receiveData(cmdout, port);
         
       }
